@@ -26,6 +26,7 @@ afterLoad:function(anchorLink,index){
         
         title.removeClass('act')
     }
+    if(anchorLink == 'page2-1'){moveBar();}
 }
 
 
@@ -60,14 +61,14 @@ startDelay:100,
 
 
 /* progress bar */
-moveBar();
+
 function moveBar(){
 $('.progress-bar').each(function(){
     var $this = $(this);
     var per = $this.attr('per');
     $this.css("width",per+'%');
     $({animatedValue: 0}).animate({animatedValue: per},{
-        duration: 1000,
+        duration: 200,
         step: function(){
         $this.attr('per', Math.floor(this.animatedValue) + '%');
         },
