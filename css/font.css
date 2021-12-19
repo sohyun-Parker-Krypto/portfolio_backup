@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'NanumCoding',Sans-serif;
+    font-weight: normal;
+    src: url(../font/NanumGothicCoding.ttf);
+}
+@font-face {
+    font-family: 'NanumCodingBold',Sans-serif;
+    font-weight: bold;
+    src: url(../font/NanumGothicCoding-Bold.ttf);
+}
+@font-face {
+    font-family: 'consola',Sans-serif;
+    font-weight: 100;
+    src: url(../font/consola.ttf);
+}
+@font-face {
+    font-family: 'consolaBold',Sans-serif;
+    font-weight: 400;
+    src: url(../font/consolab.ttf);
+}
+
+
+
+.consola{
+    font-family: 'consola',Sans-serif;
+}
+.consolaBold{
+    font-family: 'consolaBold',Sans-serif;
+}
