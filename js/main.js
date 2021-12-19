@@ -10,11 +10,13 @@ keyboardScrolling: true,
 paddingBottom:'0px',
 paddingTop:'0px',
 afterLoad:function(anchorLink,index){
+    var thisPage=$(this).find('.github');
     if(anchorLink == 'page3' || anchorLink == 'page3-1' || anchorLink == 'page3-2'){
         $('.menuDepth').addClass('on')
-
+        thisPage.addClass('on')
     }else{
         $('.menuDepth').removeClass('on')
+        thisPage.removeClass('on')
     }
     var depth2 =$('.nav ul.fr li.fl'),
     title= $('.nav h1.fl');
@@ -24,7 +26,6 @@ afterLoad:function(anchorLink,index){
         
         title.removeClass('act')
     }
-
 }
 
 
