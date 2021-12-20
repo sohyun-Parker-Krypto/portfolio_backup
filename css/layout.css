@@ -64,7 +64,8 @@
   transition: transform 0.4s ease-out;
   transform-origin: bottom right;
 }
-.nav ul.fr li.fl.active::after,.nav ul.fr li.fl.on::after{
+.nav ul.fr li.fl.active::after,
+.nav ul.fr li.fl.on::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -72,7 +73,8 @@
   padding: 2rem 1rem;
   box-sizing: border-box;
 }
-.nav ul.fr li.fl.active > a, .nav ul.fr li.fl.on> a {
+.nav ul.fr li.fl.active > a,
+.nav ul.fr li.fl.on > a {
   color: coral;
 }
 
@@ -84,7 +86,8 @@
   left: calc(112px * -0.5);
   box-shadow: 2px 2px 5px 2px #00000011;
 }
-.nav ul.fr > li.menuDepth.active > ul, .nav ul.fr > li.menuDepth.on > ul {
+.nav ul.fr > li.menuDepth.active > ul,
+.nav ul.fr > li.menuDepth.on > ul {
   display: block;
 }
 .nav ul.fr > li.fl > ul > li {
@@ -98,10 +101,12 @@
   transition: letter-spacing 0.4s;
 }
 
-.nav ul.fr > li.fl > ul > li:hover,.nav ul.fr > li.fl > ul > li.active {
+.nav ul.fr > li.fl > ul > li:hover,
+.nav ul.fr > li.fl > ul > li.active {
   background: #f7e3c544;
 }
-.nav ul.fr > li.fl > ul > li:hover > a,.nav ul.fr > li.fl > ul > li.active > a {
+.nav ul.fr > li.fl > ul > li:hover > a,
+.nav ul.fr > li.fl > ul > li.active > a {
   color: #333;
   letter-spacing: 0.2em;
 }
@@ -148,7 +153,7 @@
   letter-spacing: -0.24rem;
   color: #333;
 }
-.main .mainLink{
+.main .mainLink {
   position: absolute;
   top: 54%;
   left: 32%;
@@ -166,7 +171,7 @@
   letter-spacing: -0.08em;
   position: relative;
   top: 0;
-  margin-right:8px;
+  margin-right: 8px;
 }
 
 .main a.link:hover {
@@ -266,6 +271,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-40%);
+  padding-left: 4.8rem;
 }
 
 .about .subSlogan {
@@ -352,24 +358,38 @@
   box-sizing: border-box;
 }
 .about .aboutPic {
-  width: 40%;
+  width: 45%;
   text-align: center;
   display: block;
   position: relative;
+  padding-left: 16rem;
 }
-
+.about .aboutPic img{
+  margin-bottom: 2rem;
+}
+.about .aboutPic p{
+line-height: 150%;
+font-weight: normal;
+font-size: 18px;
+letter-spacing: -0.05em;
+}
+.about .aboutPic p strong{
+  font-weight: normal;
+  font-size: 20px;
+}
 .about .aboutPic a {
   width: 200px;
   text-align: center;
   line-height: 64px;
   background: coral;
-  margin: 4rem auto;
+  margin: 2rem auto;
   display: block;
   color: #fff;
+  border-radius: 32px;
 }
 
 .about .aboutBox {
-  width: 60%;
+  width: 55%;
   display: block;
 }
 .about .aboutBox .school {
@@ -438,12 +458,16 @@
   z-index: -1;
   font-size: 96px;
   opacity: 0.1;
+  font-family: "consolaBold", Sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
 }
 .canUse .program span {
   color: #000;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.1rem;
   text-indent: 24px;
   display: block;
+  line-height: 1.5;
 }
 .canUse .program .progress {
   display: block;
@@ -458,8 +482,12 @@
   position: relative;
   border-radius: 24px;
 }
+.canUse .program .progress-wrap + span {
+  margin: 8px 0 16px;
+  display: block;
+}
 .canUse .program .progress-bar {
-  background: linear-gradient(to right, #fec18a, #fe9563,#ff864e);
+  background: linear-gradient(to right, #fec18a, #fe9563, #ff864e);
   position: relative;
   transition: 1s linear;
   width: 0;
@@ -687,6 +715,8 @@
   width: 100%;
   margin: 48px 0 20px;
   line-height: 1.65em;
+  letter-spacing: -0.06em;
+  text-align: justify;
 }
 .portfolio .period {
   width: 100%;
@@ -738,40 +768,43 @@
   color: coral;
   position: relative;
 }
-.portfolio p.icon .github::after{
-  content: '';
+.portfolio p.icon .github::after {
+  content: "";
   position: absolute;
-  top: 50%; left: 20px;
+  top: 50%;
+  left: 20px;
   font-size: 14px;
-border-left: 4px solid #333;
-border-top: 4px solid #333;
-border-right: 4px solid transparent;
-border-bottom: 4px solid transparent;
+  border-left: 4px solid #333;
+  border-top: 4px solid #333;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
   width: 1px;
   height: 1px;
   text-align: center;
   transform: rotate(-135deg);
 }
-.portfolio p.icon .github::before{
-  content: '이동하기';
+.portfolio p.icon .github::before {
+  content: "깃허브 이동하기";
   position: absolute;
-  top: 30%; left: -40%;
-  font-size: 14px;
+  top: 30%;
+  left: -55%;
+  font-size: 12px;
   background: #333;
   color: #fff;
-  padding: 4px;
-  width: 96px;
+  padding: 6px;
+  width: 110px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 14px;
 }
-.portfolio p.icon .github::after,.portfolio p.icon .github::before{
- opacity: 0;
-  transition: opacity .2s;
+.portfolio p.icon .github::after,
+.portfolio p.icon .github::before {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
-.portfolio p.icon .github.on::after,.portfolio p.icon .github.on::before{
+.portfolio p.icon .github.on::after,
+.portfolio p.icon .github.on::before {
   opacity: 1;
 }
-
 
 .portfolio p.icon .fa-internet-explorer:after {
   content: "9+";
@@ -814,10 +847,13 @@ border-bottom: 4px solid transparent;
 
 .section-04 .contentDesc .title a.link {
   float: right;
-  margin-right: -32px;
+  margin-right: -96px;
   margin-bottom: 16px;
   box-shadow: rgb(148, 54, 7, 80%) 20px 20px 48px,
     rgb(255 255 255) -12px -12px 48px;
+  padding: 2rem;
+  border-radius: 3.6rem;
+  border-bottom-left-radius: 0;
 }
 .section-04 .contentDesc .title .hashtag {
   float: left;
@@ -947,28 +983,32 @@ border-bottom: 4px solid transparent;
 .footer .section-content .phoneNum,
 .footer .section-content .email,
 .footer .section-content address,
-.footer .section-content p,.footer input#emailCopy {
+.footer .section-content p,
+.footer input#emailCopy {
   font-size: 16px;
   font-style: normal;
   display: inline-block;
   line-height: 32px;
   color: #333;
 }
-.footer input#emailCopy,.footer input#emailCopy:hover,.footer input#emailCopy:focus{
+.footer input#emailCopy,
+.footer input#emailCopy:hover,
+.footer input#emailCopy:focus {
   border: none;
-  appearance:none;
+  appearance: none;
 }
 
-.footer .container .phoneNum::after {
-  content: "|";
-  display: inline-block;
-  margin: 0 8px;
+.footer .container .phoneNum {
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0em;
+  font-weight: bold;
 }
 
 .footer .container div > i {
   margin-right: 8px;
 }
-
 
 .footer button.copy {
   background: none;
@@ -997,10 +1037,14 @@ a#topBtn {
   z-index: 999;
 }
 
-
 /* fullpage Custom */
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
-  
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
   transform-origin: center center;
   transform: scale(2);
+  background: coral;
+  border: 2px solid #333;
+  transform: translate(-10%, -0%);
 }
