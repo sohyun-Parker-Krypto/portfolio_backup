@@ -1,12 +1,14 @@
 @charset "utf-8";
-@import "fonts.css";
 @import "reset.css";
+@import "font.css";
 
 .header,
 .content,
 .footer,
 .wrap {
   width: 100%;
+  font-family:'NanumCoding';
+  word-spacing: -0.2em;
 }
 .container {
   width: 1400px;
@@ -28,6 +30,7 @@
 }
 .nav {
   width: 100%;
+  font-family:'consola';
 }
 .nav h1.fl > a {
   display: block;
@@ -291,11 +294,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  inset: 0 0 0 0;
   background: #ff7f50;
   z-index: -1;
   transition: transform 0.3s ease;
   width: 320px;
+  height: 52px;
   margin-left: -4%;
 }
 .about .subSlogan::before {
@@ -317,23 +320,23 @@
   text-align: left;
   margin-bottom: 48px;
   font-size: 48px;
-  letter-spacing: -0.5rem;
+  letter-spacing: -0.12em;
   position: relative;
 }
 .about .subSlogan + p > span.colored:before {
   content: " ";
   display: block;
   position: absolute;
-  top: 0;
+  top: -4px;
   right: 0;
   bottom: 0;
   left: 0;
-  inset: 0 0 0 0;
   background: #ff7f50;
   z-index: -1;
   transition: transform 0.3s ease;
-  width: 434px;
-  margin-left: 9.4%;
+  width: 420px;
+  height: 52px;
+  margin-left: 10.4%;
 }
 .about .subSlogan + p > span.colored::before {
   transform: scaleX(0);
@@ -426,6 +429,7 @@ letter-spacing: -0.05em;
   display: block;
   line-height: 2;
   font-size: 18px;
+  letter-spacing: -0.15em;
 }
 
 .about .aboutBox .imgTable {
@@ -501,10 +505,11 @@ letter-spacing: -0.05em;
   padding: 4px 6px;
   background-color: #333;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 4px;
   top: -35px;
   right: 0;
+  letter-spacing: 0.04em;
   transform: translateX(50%);
 }
 .canUse .program .progress-bar::after {
@@ -513,7 +518,8 @@ letter-spacing: -0.05em;
   width: 10px;
   height: 10px;
   background-color: #333;
-  top: -16px;
+  top: -18px;
+  z-index: -1;
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
@@ -652,10 +658,11 @@ letter-spacing: -0.05em;
   width: calc(100% - 700px);
   max-width: 640px;
   min-width: 320px;
-  padding-left: 48px;
+  padding-left: 56px;
+  padding-top: 96px;
   box-sizing: border-box;
   position: relative;
-  top: 32%;
+  top: 0%;
 }
 .portfolio .contentDesc .title {
   width: 100%;
@@ -665,6 +672,8 @@ letter-spacing: -0.05em;
   letter-spacing: -0.4rem;
   float: left;
   position: relative;
+  font-family:'NanumCodingBold';
+  font-weight: bold;
 }
 .portfolio .contentDesc .title h4:after {
   content: "";
@@ -696,13 +705,13 @@ letter-spacing: -0.05em;
   width: 160px;
   text-align: center;
   float: left;
-  padding: 1.2rem 0;
+  padding: 1.4rem 0.8rem;
   position: relative;
   border-radius: 24px;
   border-bottom-left-radius: 0;
   top: 0;
   left: 0;
-  transform: translateY(25%);
+  transform: translateY(-60%);
   margin-left: 24px;
   transition: all 0.3s ease-in-out;
 }
@@ -713,10 +722,11 @@ letter-spacing: -0.05em;
 .portfolio .contentDesc span.desc {
   display: block;
   width: 100%;
-  margin: 48px 0 20px;
+  margin: 24px 0 20px;
   line-height: 1.65em;
-  letter-spacing: -0.06em;
-  text-align: justify;
+  letter-spacing: -0.02em;
+  word-spacing: -0.24em;
+  text-align:left;
 }
 .portfolio .period {
   width: 100%;
@@ -771,8 +781,8 @@ letter-spacing: -0.05em;
 .portfolio p.icon .github::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 20px;
+  top: 40%;
+  left: 24px;
   font-size: 14px;
   border-left: 4px solid #333;
   border-top: 4px solid #333;
@@ -786,7 +796,7 @@ letter-spacing: -0.05em;
 .portfolio p.icon .github::before {
   content: "깃허브 이동하기";
   position: absolute;
-  top: 30%;
+  top:20%;
   left: -55%;
   font-size: 12px;
   background: #333;
@@ -845,10 +855,15 @@ letter-spacing: -0.05em;
   width: 80%;
 }
 
+.section-04 .contentDesc h4{
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  word-spacing: -0.2em;
+}
 .section-04 .contentDesc .title a.link {
   float: right;
   margin-right: -96px;
-  margin-bottom: 16px;
+  margin-bottom: -16px;
   box-shadow: rgb(148, 54, 7, 80%) 20px 20px 48px,
     rgb(255 255 255) -12px -12px 48px;
   padding: 2rem;
@@ -987,6 +1002,9 @@ letter-spacing: -0.05em;
 .footer input#emailCopy {
   font-size: 16px;
   font-style: normal;
+  font-family: 'consola','NanumCoding',sans-serif;
+  letter-spacing: -0.04em;
+  word-spacing: -0.2em;
   display: inline-block;
   line-height: 32px;
   color: #333;

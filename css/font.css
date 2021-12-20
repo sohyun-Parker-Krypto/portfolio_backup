@@ -2,31 +2,31 @@
 
 
 @font-face {
-    font-family: 'NanumCoding',Sans-serif;
-    font-weight: normal;
-    src: url(../font/NanumGothicCoding.ttf);
+    font-family:'NanumCoding';
+    font-weight:normal;
+    src:url(../font/NanumGothicCoding.ttf);
 }
 @font-face {
-    font-family: 'NanumCodingBold',Sans-serif;
-    font-weight: bold;
-    src: url(../font/NanumGothicCoding-Bold.ttf);
+    font-family:'NanumCodingBold';
+    font-weight:bold;
+    src:url(../font/NanumGothicCoding-Bold.ttf);
 }
 @font-face {
-    font-family: 'consola',Sans-serif;
-    font-weight: 100;
-    src: url(../font/consola.ttf);
+    font-family:'consola';
+    font-weight:normal;
+    src:url(../font/consola.ttf);
 }
 @font-face {
-    font-family: 'consolaBold',Sans-serif;
-    font-weight: 400;
-    src: url(../font/consolab.ttf);
+    font-family:'consolaBold';
+    font-weight:bold;
+    src:url(../font/consolab.ttf);
 }
 
 
 
 .consola{
-    font-family: 'consola',Sans-serif;
+    font-family:'consola';
 }
 .consolaBold{
-    font-family: 'consolaBold',Sans-serif;
+    font-family:'consolaBold';
 }
